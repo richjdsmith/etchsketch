@@ -11,8 +11,30 @@
     <div class="menu">
         <h1>Welcome to Wayne's World.</h1>
         <h3>(It's actually the EtchSketch Grid.)</h3>
-        <div class="controls">
-            <button>Reset</button>
+        <div class="grid-size">
+            <p>Enter your grid's dimensions (in grid blocks):</p>
+            <form>
+                <input type="text" name="width" id="width">
+                <p>X</p>
+                <input type="text" name="height" id="height">
+            </form>
+        </div>
+        <div class="block-color">
+            <p>Enter <a href="http://www.w3schools.com/cssref/css_colors.asp">A CSS Color</a> or Hex Code below and press the change button, or simply press the random button.</p>
+            <form>
+                <p>Color:</p>
+                <input type="text" name="color" id="color">
+                
+                <div id="color-button" class="button">Change </div>
+                <div id="color-button" class="button">Random</div>
+            </form>
+        </div>
+
+
+
+        <div class="reset-controls">
+            <p>Reset the grid to blank slate:</p>
+            <div class="button reset">Reset</div>
         </div>
     </div>
     <div class="grid">

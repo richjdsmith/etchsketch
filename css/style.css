@@ -1,3 +1,12 @@
+h1,
+h2,
+h3,
+p {
+    font-family: helvetica, Times New Roman;
+}
+
+
+
 .wrapper{
     width: 960px;
     height: 960px;
@@ -7,10 +16,10 @@
     position: relative;
     display: inline-block;
     margin: 2px 2px 2px 2px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: green;
     text-align: center;
+    border-style: dotted;
+    border-width: 0.25px;
+
 }
 
 .row{
@@ -18,7 +27,9 @@
     position: relative;
 }
 
-
+.grid{
+    
+}
 
 
 .menu{
@@ -32,7 +43,59 @@
     margin: 5px 0;
 }
 
-.controls{
-    margin: 5px;
-    margin-top: 20px;
+.reset-controls{
+    margin: 10px;
+    border-top: dotted lightcoral;
 }
+
+.reset-controls p{
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+.button {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    font-family: helvetica;
+    border-radius: 20px;
+    background-color: lightcoral;
+    box-shadow: none;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 30px;
+}
+
+.button:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.grid-size form > *{
+    display: inline-block;
+}
+.grid-size form {
+    padding-bottom: 20px;
+
+}
+
+
+.grid-size input {
+    width: 25px;
+    height: 25px;
+    text-align: right;
+}
+
+.grid-size p {
+    margin-bottom: 0px;
+}
+
+
+.block-color form > * {
+    display: inline-block;
+}
+
+
+
+
