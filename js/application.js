@@ -71,7 +71,7 @@ customColorPicker = function(){
     $("#color-button").on("click", function(){
         newColor = $("#color-chosen").val();
         color = newColor;
-        alert(color);
+        
 
     });
     setBlockColor();
