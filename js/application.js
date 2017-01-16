@@ -1,11 +1,16 @@
 $(document).ready(function(){
 
 
-//Generating the grid of divs -  .block dimensions not set as of yet.
+//General use global variables
 var gridWidth = 16;
 var gridHeight = 16;
 wrapperWidth = $(".wrapper").outerWidth();
 wrapperHeight = $(".wrapper").outerHeight();
+//Default Color
+var color = "turquoise";
+
+
+//Generating the grid of divs -  .block dimensions not set as of yet.
 createGrid = function (){
     for (i = 0; i < gridHeight; i++){
         $("<div class='row'>  </div").appendTo(".grid");   
@@ -38,9 +43,6 @@ $(".row").css("height", function(){
     return $(".block").outerHeight(true);
 });
 
-//Color Picker
-var color = "green";
-
 
 //Creating the hover effect
 setBlockColor = function(){
@@ -51,14 +53,30 @@ setBlockColor = function(){
 setBlockColor();
 
 //reset grid colors to a blank slate.
+resetColor = function(){
 $(".button.reset").on("click", function(){
         $(".block").css("background-color", "");
 });
 
-
+};
+resetColor();
 
 //Custom color picking or random color depending on if hex colors are entered or random button pressed
 customColorPicker = function(){
+    $("#color-random").on("click", function(){
+        color = '#'+Math.floor(Math.random()*16777215).toString(16);
+    });
+    setBlockColor();
+    resetColor();
+    $("#color-button").on("click", function(){
+        newColor = $("#color-chosen").val();
+        color = newColor;
+        alert(color);
+
+    });
+    setBlockColor();
+    resetColor();
+
 
 };
 customColorPicker();
