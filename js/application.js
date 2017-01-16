@@ -33,9 +33,11 @@ setBlockDimensions = function(){
 };
 setBlockDimensions();
 
+//Setting Row heights to match block height.
 $(".row").css("height", function(){
     return $(".block").outerHeight(true);
 });
+
 
 
 

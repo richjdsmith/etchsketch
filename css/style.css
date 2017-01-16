@@ -11,14 +11,28 @@
     border-width: 1px;
     border-color: green;
     text-align: center;
-    
-
 }
 
 .row{
     text-align: center;
     position: relative;
-    
+}
 
 
-}`
+
+
+.menu{
+    text-align: center;
+}
+
+.menu h1 {
+    margin: 5px 0;
+}
+.menu h3 {
+    margin: 5px 0;
+}
+
+.controls{
+    margin: 5px;
+    margin-top: 20px;
+}
